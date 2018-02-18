@@ -1,1 +1,14 @@
 #!/usr/bin/env ruby
+
+require_relative '../lib/turn'
+
+puts "test"
+
+board = Array.new
+until board.length >= 9 do
+  board << " "
+end
+
+puts "Welcome to Tic Tac Toe!"
+display_board(board)
+turn(board)
